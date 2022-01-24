@@ -5,5 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.ActionBarActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="showActionBar"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ActionBar_button"
+        android:textAllCaps="false"
+        android:text="显示ActionBar"/>
+    <Button
+        android:onClick="hideActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ActionBar_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAllCaps="false"
+        android:text="隐藏ActionBar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

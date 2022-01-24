@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.test" //指定项目的包名
+        minSdkVersion 28  //用于指定项目兼容的最低Android版本
+        targetSdkVersion 30 // 系统会为项目添加新的版本功能
+        versionCode 1  //当前项目的版本号
+        versionName "1.0" //当前项目的版本名
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {//当前闭包下应该还有一个子闭包Debug  是用于指定生成测试版安装文件的配置
+        release {  //用于指定生成正式版安装文件的配置
+            minifyEnabled false  //用于指定是否对项目的代码进行混淆 false表示不混淆 true表示混淆
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'//用于指定混淆时使用的规则文件
+            //proguard-android.text 是在AndroidSDK目录下的 里面是所有项目通用的混淆规则
+            //origuard-rules.pro  是在当前项目的根目录下的，里面可以编写当前项目的特有的混淆规则.
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//这个闭包他可以指定当前项目所有的依赖关系,通常Android Studio项目一共有三种依赖方式
+//本地依赖 库依赖 远程依赖
+//本地依赖 可以对本地的Jar包或目录添加依赖关系
+//库依赖 可以对项目中的库模块添加依赖关系
+//远程依赖 可以对jcenter库上开源项目添加依赖关系
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'androidx.fragment:fragment:1.3.0'
+
+}

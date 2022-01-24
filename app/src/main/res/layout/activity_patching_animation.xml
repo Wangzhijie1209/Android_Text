@@ -4,6 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".animation.patching_animation.Patching_AnimationActivity">
+    tools:context=".animation.patching_animation.Patching_Animation_Activity">
+
+    <ImageView
+        android:id="@+id/patching_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/patching_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="执行使用xml方式\n做出来的动画"
+        app:layout_constraintLeft_toLeftOf="@id/patching_imageview"
+        app:layout_constraintRight_toRightOf="@id/patching_imageview"
+        app:layout_constraintTop_toBottomOf="@id/patching_imageview" />
+
+    <ImageView
+        android:id="@+id/patching_imageview2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/patching_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="执行使用代码方式\n创建出来的动画"
+        app:layout_constraintLeft_toLeftOf="@id/patching_imageview2"
+        app:layout_constraintRight_toRightOf="@id/patching_imageview2"
+        app:layout_constraintTop_toBottomOf="@id/patching_imageview2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

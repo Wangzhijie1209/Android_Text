@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".event_handlling.CallbackActivity">
+    <com.example.test.event_handlling.MyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn"
+        android:text="单击我"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

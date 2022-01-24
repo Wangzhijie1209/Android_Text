@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test">
+        <activity android:name=".handler.Handler_Send_Activity" />
+
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".ToastActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".BActivity" />
+        <activity android:name=".AActivity" />
+        <activity android:name=".animation.frame_animation.Frame_Animation_Activity" />
+        <activity android:name=".animation.patching_animation.Patching_Animation_Activity" />
+        <activity android:name=".animation.attribute_animation.Attribute_AnimationActivity" />
+        <activity android:name=".event_handlling.AsyncTaskActivity" />
+        <activity android:name=".event_handlling.Handler2Activity" />
+        <activity android:name=".event_handlling.HandlerActivity" />
+        <activity android:name=".event_handlling.ScreenOrientationActivity" />
+        <activity android:name=".event_handlling.ConfigurationActivity" />
+        <activity android:name=".event_handlling.CallbackActivity" />
+        <activity android:name=".event_handlling.ExternalclassActivity" />
+        <activity android:name=".event_handlling.PlaneGame" />
+        <activity android:name=".event_handlling.EventActivity" />
+        <activity android:name=".View.ActionViewActivity" />
+        <activity android:name=".View.ActionBarActivity" />
+        <activity android:name=".View.PopupMenuActivity" />
+        <activity android:name=".View.XML_menuActivity" />
+        <activity android:name=".View.ContextMenuActivity" />
+        <activity android:name=".View.Use_Menu_to_jumpActivity" />
+        <activity android:name=".View.MenuActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.DatePickerDialog_and_TimePickerDialogActivity" />
+        <activity android:name=".View.PopupWindowActivity" />
+        <activity android:name=".View.AlertDialogActivity" />
+        <activity android:name=".View.Notification2Activity" />
+        <activity android:name=".View.NotificationActivity" />
+        <activity android:name=".View.ScrollViewActivity" />
+        <activity android:name=".View.SearchViewActivity" />
+        <activity android:name=".View.NumberPickerActivity" />
+        <activity android:name=".View.DatePicker_and_TimePickerActivity" />
+        <activity android:name=".View.CalendarViewActivity" />
+        <activity android:name=".View.ViewFlipperActivity" />
+        <activity android:name=".View.ImageSwitcherActivity" />
+        <activity android:name=".View.LauncherActivity" />
+        <activity android:name=".View.RatingBarActivity" />
+        <activity android:name=".View.SeekBarActivity" />
+        <activity android:name=".View.ProgressBarActivity" />
+        <activity android:name=".View.RecyclerViewActivity" />
+        <activity android:name=".View.StackViewActivity" />
+        <activity android:name=".View.AdapterViewFlipperActivity" />
+        <activity android:name=".View.ExpandableListViewActivity" />
+        <activity android:name=".View.AutoCompleteTextViewActivity" />
+        <activity android:name=".View.MainActivity" />
+    </application>
+
+</manifest>

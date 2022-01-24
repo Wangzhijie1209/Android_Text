@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.test.R;
+
 public class Frame_Animation_Activity extends AppCompatActivity {
 
     @Override

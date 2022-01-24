@@ -1,4 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!-- 旋转动画 rotate
+        fromDegrees:从哪个角度开始
+        toDegrees:旋转到哪个角度
+        图片根据哪个角旋转是根据pivotX和pivotY决定的
+        duration:执行时长
+        startOffset 开始执行的偏移
+    -->
+    <rotate
+        android:startOffset="2000"
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="360" />
+
+
+    <!-- 缩放动画 scale
+        fromXScale:开始位置 设置为1 最开始是他的原始大小
+        fromYScale:开始位置 设置为1 最开始是他的原始大小
+        toXScale:终止位置 设置为比1小的就是缩小 设置为比1大的就是放大
+        toYScale:终止位置 设置为比1小的就是缩小 设置为比1大的就是放大
+        pivotX 根据哪个点来进行动画
+        pivotY 根据哪个点来进行动画
+        -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.5"
+        android:toYScale="0.5" />
+    <!--平移动画 translate
+        fromXDelta 起始值
+        fromYDelta 起始值
+        toXDelta   终止值
+        toYDelta   终止值
+        -->
+    <translate
+        android:duration="2000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="400"
+        android:toYDelta="400" />
+
+    <!--透明度动画
+        fromAlpha 开始执行时的透明度 最大值为1 最小值为0
+        toAlpha  执行完成后的透明度
+        repeatCount 执行次数
+        repeatMode 执行的模式 有reverse(反转模式)和 restart(重新开始模式)
+
+        -->
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="1"
+        android:repeatCount="1"
+        android:repeatMode="restart"
+        android:toAlpha="0" />
+
 </set>
