@@ -11,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
+        <activity
+            android:name=".intent.IntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".handler.Handler_Send_Activity" />
-
         <activity android:name=".handler.HandlerActivity" />
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".ToastActivity" />
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask" />
@@ -38,12 +44,8 @@
         <activity android:name=".View.XML_menuActivity" />
         <activity android:name=".View.ContextMenuActivity" />
         <activity android:name=".View.Use_Menu_to_jumpActivity" />
-        <activity android:name=".View.MenuActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".View.MenuActivity"/>
+
         <activity android:name=".View.DatePickerDialog_and_TimePickerDialogActivity" />
         <activity android:name=".View.PopupWindowActivity" />
         <activity android:name=".View.AlertDialogActivity" />
