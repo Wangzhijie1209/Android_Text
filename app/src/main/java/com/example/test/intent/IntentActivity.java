@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.R;
 
 /**
- *隐式Intent使用:
+ * 隐式Intent使用:
  */
 public class IntentActivity extends AppCompatActivity {
 
@@ -33,5 +33,15 @@ public class IntentActivity extends AppCompatActivity {
     }
 
     public void onClickgeo(View view) {
+    }
+
+    public void onclicks(View view) {
+        String data = "王志杰真帅";
+        Intent intent = new Intent(IntentActivity.this,BIntentActivity.class);
+        intent.putExtra("data", data);
+        Bundle bundle = new Bundle();
+        bundle.putString("string",data);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
