@@ -22,5 +22,15 @@ public class BIntentActivity extends AppCompatActivity {
         Log.w(TAG, "www"+string );
         String data = intent.getStringExtra("data");
         textView.setText(data);
+
+    }
+
+    //当用户按下Back返回键,就会执行这个方法，可以在这里做一些传输数据的操作
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent();
+        intent.putExtra("data","wangzhijie");
+        setResult(RESULT_OK,intent);
+        finish();
     }
 }
